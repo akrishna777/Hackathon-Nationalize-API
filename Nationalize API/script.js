@@ -46,15 +46,6 @@ function onFormSubmit(submit) {
 
                 listContainer.innerHTML = listli
 
-                // //To populate data within card
-                // let listContainer = document.getElementById('listItems')
-                // let listli = ""
-                // for (const key in data.country) {
-                //     listli += `<li class="list-group-item">Country Code: ${data.country[key].country_id}<br>Probability: ${(data.country[key].probability * 100).toFixed(2)}%</li>`
-                // }
-
-                // listContainer.innerHTML = listli
-
             }
             printData(countryData)
 
@@ -109,9 +100,6 @@ function onFormSubmit2(submit) {
                     </ul>
                 </div>
                     `
-
-
-
                 })
 
 
@@ -123,14 +111,11 @@ function onFormSubmit2(submit) {
 
                     for (const key in element.country) {
                         listli += (`<li class="list-group-item">Country Code: ${element.country[key].country_id}<br>Probability: ${(element.country[key].probability * 100).toFixed(2)}%</li>`)
-
                     }
 
                     for (let i = 0; i < listContainer.length; i++) {
                         listContainer[i].innerHTML = listli
-
                     }
-
                 })
 
             }
