@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <title>Nationalize API!</title>
+</head>
+
+<body>
+
+    <!-- Main Container -->
+    <div class="container d-flex flex-column">
+
+        <!-- headings -->
+        <div class="container my-4" id="heading">
+            <h1>Welcome to Nationalize API!</h1>
+        </div>
+        <div class="container" id="heading2">
+            <h3>Predict Your Nationality.</h3>
+            <p>Just type in your first name below and we will guess which country you are from.<br>
+                <span class="badge badge-warning">Note: </span>&nbspDo not enter full name or a name separated by space.
+            </p>
+
+        </div>
+        <!-- headings -->
+
+
+        <!-- Single Name -->
+        <div class="container d-flex justify-content-center flex-column" id="subinfo1">
+            <form id="searchForm">
+                <div class="form-group">
+                    <label for="formGroupExampleInput">Provide Your First Name</label>
+                    <input type="text" class="form-control" id="searchName" placeholder="Enter Your Name">
+                </div>
+                <button type="submit" class="btn btn-success mb-2">Submit</button>
+                <button type="reset" class="btn btn-danger mb-2 mx-2" onclick="clear1()">Clear</button>
+            </form>
+
+        </div>
+
+        <div class="container d-flex justify-content-start my-3" id="results">
+        </div>
+
+
+        <!-- Multiple Names -->
+
+        <div class="container d-flex justify-content-center flex-column" id="subinfo2">
+            <br>
+            <h4>Predict Nationality For Multiple Names</h4>
+            <p>
+                <span class="badge badge-danger">Note: </span>
+                You can only get result for 10 names at a time<br>
+                Enter Names separated by comma ","
+            </p>
+
+            <form id="searchForm2">
+                <div class="form-group">
+                    <label for="formGroupExampleInput">Provide Your Name</label>
+                    <input type="text" class="form-control" id="searchName2"
+                        placeholder="Enter Multiple Names. For e.g. Michael, Emily, Mukesh">
+                </div>
+                <button type="submit" class="btn btn-success mb-2">Submit</button>
+                <button type="reset" class="btn btn-danger mb-2 mx-2" onclick="clear2()">Clear</button>
+            </form>
+
+        </div>
+        <div class="container d-flex justify-content-center my-3">
+            <div class="container d-flex flex-row flex-wrap" id="results2">
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    -->
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+body{
+    background-image: url(/background.jpg);
+    font-family: 'Inter', sans-serif;
+    font-weight: 100;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#heading h1{
+    text-align: center;
+    color: white;
+    font-weight: 100;
+}
+#heading2{
+    
+    color: white;
+    font-weight: 100;
+}
+#heading2 h3{
+    
+    color: white;
+    font-weight: 100;
+}
+#heading2 h4{
+    
+    color: white;
+    font-weight: 100;
+}
+
+#subinfo1{
+    color: white;
+    font-weight: 100;
+}
+#subinfo2{
+    color: white;
+    font-weight: 100;
+}
+#subinfo2 h4{
+    color: white;
+    font-weight: 100;
+}
+
+.alert{
+    font-weight: 400;
+    width:fit-content;
+    height: fit-content;
+    padding: 0 10px 0 10px;
+}
+
+.card{
+    background: #161B22 ;
+    color: white;
+}
+
+.list-group-item{
+    background: #161B22 ;
+    color: white;
+
+}
+.card-subtitle{
+    font-weight: 200;
+    color: rgb(29, 250, 21);
+}
+
+
+.spinner{
+
+    width: 50px;
+    height: 50px;
+    
+    border: 2px solid #f3f3f3;
+    border-top:3px solid #f25a41;
+    border-radius: 100%;
+
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+
+#overlay{
+    border: 2px solid black;
+    height: 10%;
+    width: 100%;
+    background: rgba(0,0,0, 0.8);
+    position: fixed;
+    left: 0;
+    top: 0;
+}
